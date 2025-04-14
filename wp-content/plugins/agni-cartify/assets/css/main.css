@@ -1,0 +1,154 @@
+.hide {
+  display: none; }
+
+.cartify_ajax_product_widget:not(.expanded) .agni-product-attributes,
+.cartify_ajax_product_widget:not(.expanded) .agni-product-categories,
+.cartify_ajax_product_widget:not(.expanded) .agni-product-brands,
+.cartify_ajax_product_widget:not(.expanded) .agni-product-price,
+.cartify_ajax_product_widget:not(.expanded) .agni-product-active-filters,
+.cartify_ajax_product_widget:not(.expanded) .agni-product-ratings {
+  display: none; }
+
+.agni-product-attributes .list-toggle span,
+.agni-product-categories .list-toggle span,
+.agni-product-categories-taxonomy .list-toggle span {
+  display: block; }
+
+.agni-product-attributes .list-toggle span:last-child,
+.agni-product-categories .list-toggle span:last-child,
+.agni-product-categories-taxonomy .list-toggle span:last-child {
+  display: none; }
+
+.agni-product-attributes.more .list-toggle span,
+.agni-product-categories.more .list-toggle span,
+.agni-product-categories-taxonomy.more .list-toggle span {
+  display: block; }
+
+.agni-product-attributes.more .list-toggle span:first-child,
+.agni-product-categories.more .list-toggle span:first-child,
+.agni-product-categories-taxonomy.more .list-toggle span:first-child {
+  display: none; }
+
+.agni-product-price-slider {
+  position: relative;
+  max-width: 200px;
+  width: calc(100% - 13px);
+  margin-left: 6px;
+  margin-top: 7px;
+  padding-top: 15px; }
+
+.agni-product-price-slider__handle {
+    position: relative;
+    width: 100%;
+    height: 1px;
+    display: block;
+    margin-bottom: 8px; }
+
+.agni-product-price-slider__handle--base {
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: #ddd; }
+
+.agni-product-price-slider__handle--min, .agni-product-price-slider__handle--max {
+    display: block;
+    position: absolute;
+    height: 100%;
+    -webkit-user-select: none;
+       -moz-user-select: none;
+        -ms-user-select: none;
+            user-select: none; }
+
+.agni-product-price-slider__handle--min:after, .agni-product-price-slider__handle--max:after {
+      content: '';
+      position: absolute;
+      right: 0;
+      width: 13px;
+      height: 13px;
+      margin-top: -6px;
+      margin-right: -7px;
+      border-radius: 50%;
+      background-color: #fff;
+      border: 2px solid;
+      border-color: #222;
+      transition: all 0.2s ease; }
+
+.agni-product-price-slider__handle--min:hover:after, .agni-product-price-slider__handle--max:hover:after {
+      width: 17px;
+      height: 17px;
+      margin-top: -8px;
+      margin-right: -9px; }
+
+.agni-product-price-slider__handle--min {
+    background-color: #ddd;
+    z-index: 3;
+    width: 0%; }
+
+.agni-product-price-slider__handle--max {
+    background-color: #222;
+    z-index: 2;
+    width: 100%; }
+
+.agni-product-price-slider__range {
+    font-size: var(--cartify_font_size_small_1);
+    display: flex; }
+
+.agni-product-price-slider__range--min:after {
+      content: "-";
+      margin: 0 3px; }
+
+.agni-product-price .agni-product-price-form {
+  display: flex; }
+
+.agni-product-price .agni-product-price-form__min, .agni-product-price .agni-product-price-form__max {
+    position: relative;
+    flex: 1;
+    padding: 0 12px; }
+
+.agni-product-price .agni-product-price-form__min--input, .agni-product-price .agni-product-price-form__max--input {
+      display: flex;
+      border: 1px solid #ddd;
+      align-items: center;
+      font-size: var(--cartify_font_size_small_2); }
+
+.agni-product-price .agni-product-price-form__min--input span, .agni-product-price .agni-product-price-form__max--input span {
+        padding: 0px 0px 0px 6px;
+        color: #ccc; }
+
+.agni-product-price .agni-product-price-form__min {
+    padding-left: 0; }
+
+.agni-product-price .agni-product-price-form__min:after {
+      content: "-";
+      margin: 0 10px;
+      position: absolute;
+      bottom: 0;
+      right: 0;
+      line-height: 38px;
+      margin-right: -3px; }
+
+.agni-product-price .agni-product-price-form label {
+    font-size: var(--cartify_font_size_small_1); }
+
+.agni-product-price .agni-product-price-form input {
+    border: 0;
+    padding: 10px 5px;
+    /* Chrome, Safari, Edge, Opera */
+    /* Firefox */ }
+
+.agni-product-price .agni-product-price-form input::-webkit-outer-spin-button, .agni-product-price .agni-product-price-form input::-webkit-inner-spin-button {
+      -webkit-appearance: none;
+      margin: 0; }
+
+.agni-product-price .agni-product-price-form input[type=number] {
+      -moz-appearance: textfield; }
+
+.agni-product-price .agni-product-price-form button {
+    border: 0px;
+    padding: 0;
+    text-decoration: underline;
+    margin-top: 23px; }
+
+.agni-product-price .agni-product-price-form button:before {
+      display: none; }
